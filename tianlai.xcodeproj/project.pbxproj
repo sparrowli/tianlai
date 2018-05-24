@@ -64,6 +64,22 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		F394F6C220B6DAC100B6149E /* check_coding_style */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = F394F6C320B6DAC100B6149E /* Build configuration list for PBXLegacyTarget "check_coding_style" */;
+			buildPhases = (
+			);
+			buildToolPath = utilities/check_coding_style.sh;
+			dependencies = (
+			);
+			name = check_coding_style;
+			passBuildSettingsInEnvironment = 1;
+			productName = check_coding_style;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		F3C8758F20B6C7C7009D9D9D /* tianlai */ = {
 			isa = PBXNativeTarget;
@@ -88,9 +104,15 @@
 		F3C8758820B6C7C7009D9D9D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = sparrow;
 				TargetAttributes = {
+					F394F6C220B6DAC100B6149E = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
 					F3C8758F20B6C7C7009D9D9D = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -109,6 +131,7 @@
 			projectRoot = "";
 			targets = (
 				F3C8758F20B6C7C7009D9D9D /* tianlai */,
+				F394F6C220B6DAC100B6149E /* check_coding_style */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +148,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		F394F6C420B6DAC100B6149E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F394F6C520B6DAC100B6149E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F3C8759520B6C7C7009D9D9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -253,6 +301,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F394F6C320B6DAC100B6149E /* Build configuration list for PBXLegacyTarget "check_coding_style" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F394F6C420B6DAC100B6149E /* Debug */,
+				F394F6C520B6DAC100B6149E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3C8758B20B6C7C7009D9D9D /* Build configuration list for PBXProject "tianlai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
