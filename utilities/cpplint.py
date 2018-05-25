@@ -5314,6 +5314,10 @@ def CheckCStyleCast(filename, clean_lines, linenum, cast_type, pattern, error):
     return False
 
   # At this point, all that should be left is actual casts.
+  # Allow C-style cast in .c files
+  if filename.endswith('.c'):
+    return False
+
   error(filename, linenum, 'readability/casting', 4,
         'Using C-style cast.  Use %s<%s>(...) instead' %
         (cast_type, match.group(1)))
